@@ -1,0 +1,20 @@
+Source: wifi-control-disabler 
+Section: utils
+Priority: optional
+Maintainer: LliureX Team <lliurex@gva.es> 
+Rules-Requires-Root: no
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.0
+Homepage: https://portal.edu.gva.es/lliurex/va
+#Vcs-Browser: https://salsa.debian.org/debian/foo
+Vcs-Git: https://github.com/lliurex/wifi-control-disabler 
+
+Package: wifi-control-disabler
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+ n4d
+Description: Package to disable wifi control in LliureX
+ This package provide n4d oneshot to disable wifi control  
