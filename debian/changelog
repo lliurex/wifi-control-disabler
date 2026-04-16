@@ -1,3 +1,9 @@
+wifi-control-disabler (0.1.2) jammy; urgency=medium
+
+  * Wrong inverse logic check 
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Thu, 16 Apr 2026 11:18:22 +0200
+
 wifi-control-disabler (0.1.1) jammy; urgency=medium
 
   * Check if the folder exists; if not, create it.
