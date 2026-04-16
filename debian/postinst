@@ -20,7 +20,8 @@ set -e
 
 case "$1" in
     configure)
-	    cp /usr/share/wifi-control-disabler/* /var/lib/n4d/oneshot
+	    [ ! -e /var/lib/n4d/oneshot ] || mkdir -p /var/lib/n4d/oneshot
+	    cp /usr/share/wifi-control-disabler/* /var/lib/n4d/oneshot/
 	    chmod +x /var/lib/n4d/oneshot/wifi-control-disabler
 	    n4d-client -k $(cat /etc/n4d/key) call execute_oneshots "[\""$(cat /etc/n4d/key)"\"]" 2>/dev/null || true
     ;;
