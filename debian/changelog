@@ -1,3 +1,9 @@
+wifi-control-disabler (0.1.1) jammy; urgency=medium
+
+  * Check if the folder exists; if not, create it.
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Thu, 16 Apr 2026 10:42:42 +0200
+
 wifi-control-disabler (0.1) jammy; urgency=low
 
   * Initial release.
